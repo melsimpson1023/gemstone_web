@@ -7,3 +7,5 @@
 7. added sign-out form in my html
 8. created my app.js and added what I want to show and hide
 9. created my api.js for users to sign-up, sign-in, change password, and delete
+10. created my api.js for gemstones to create, show, index, update, and destroy
+11. populated the events.js with AJAX request for each type of user task.
