@@ -9,3 +9,4 @@
 9. created my api.js for users to sign-up, sign-in, change password, and delete
 10. created my api.js for gemstones to create, show, index, update, and destroy
 11. populated the events.js with AJAX request for each type of user task.
+12. updated events.js in gemstones

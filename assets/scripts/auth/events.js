@@ -14,9 +14,9 @@ const onSignUp = function (event) {
   // send data to the api
   api.signUp(data)
   // handle successful response
-    .then(ui.signUpSuccess)
+    .then(ui.onSignUpSuccess)
     // handle failed response
-    .catch(ui.signInFailure)
+    .catch(ui.onSignUpFailure)
 }
 const onSignIn = function (event) {
   event.preventDefault()
@@ -27,9 +27,9 @@ const onSignIn = function (event) {
   // send data to api
   api.signIn(data)
   // handle successful response
-    .then(ui.signInSuccess)
+    .then(ui.onSignInSuccess)
     // handle failed response
-    .catch(ui.signInFailure)
+    .catch(ui.onSignInFailure)
 }
 const onChangePassword = function (event) {
   event.preventDefault()
