@@ -29,7 +29,7 @@ const changePassword = function (data) {
   })
 }
 // sign Out
-const signOut = function (data) {
+const signOut = function () {
   return $.ajax({
     url: config.apiUrl + '/sign-out',
     headers: {
