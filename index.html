@@ -57,20 +57,60 @@
           </fieldset>
         </form>
       </section>
+      <section>
       <form id="add-gemstone-form">
         <fieldset>
           <legend>Sell Gemstone</legend>
           <label for="add-gemstone">Gemstone</label>
-          <input id="add-gemstone" type="gemstone" name="gemstone" placeholder="gemstone">
-          <label for="sign-up-password">Password</label>
-          <input id="sign-up-password" type="password" name="credentials[password]" placeholder="Password">
-          <label for="sign-up-password_confirmation">Password Confirmation</label>
-          <input id="sign-up-password_confirmation" type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-          <input type="submit" value="Sign up">
+          <input id="add-gemstone" type="text" name="gemstone" placeholder="add gemstone">
+          <label for="price-of-gemstone">Price</label>
+          <input id="price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
+          <label for="owner-of-gemstone">Owner</label>
+          <input id="owner-of-gemstone" type="text" name="owner[gemstone]" placeholder="Owner">
+          <input type="submit" value="Add Gemstone">
         </fieldset>
       </form>
-      <section>
-
-      </section>
+    </section>
+    <section>
+      <form id="update-gemstone-form">
+      <fieldset>
+        <legend>Update Gemstones</legend>
+        <label for="update-gemstone">Gemstone</label>
+        <input id="update-gemstone" type="text" name="gemstone" placeholder="Gemstone">
+        <label for="update-price-of-gemstone">Price</label>
+        <input id="update-price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
+        <label for="update-owner-of-gemstone">Owner</label>
+        <input id="update-owner-of-gemstone" type="text" name="owner[gemstone]" placeholder="Owner">
+        <input type="submit" value="Update Gemstone">
+    </fieldset>
+    </form>
+    </section>
+    <section>
+      <form id="destroy-gemstone-form">
+      <fieldset>
+        <legend>Delete Gemstones</legend>
+        <label for="destroy-gemstone">Gemstone</label>
+        <input id="destroy-gemstone" type="text" name="gemstone" placeholder="Gemstone">
+        <label for="destroy-price-of-gemstone">Price</label>
+        <input id="destroy-price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
+        <label for="destroy-owner-of-gemstone">Owner</label>
+        <input id="destroy-owner-of-gemstone" type="text" name="owner[gemstone]" placeholder="Owner">
+        <input type="submit" value="Delete Gemstone">
+    </fieldset>
+    </form>
+    </section>
+    <br></br>
+    <section>
+      <form id="index-gemstone-form">
+        <input type="submit" value="Show All Gemstones">
+      </form>
+    </section>
+    <br></br>
+    <section>
+      <form id="show-gemstone-form">
+        <input type="submit" value="Show Your Gemstones">
+      </form>
+    </section>
+    <br></br>
     </body>
 </html>
