@@ -4,7 +4,7 @@ const getFormFields = require('./../../../lib/get-form-fields')
 const ui = require('./ui')
 const api = require('./api')
 
-const onCreate = function (event) {
+const onCreateGemstone = function (event) {
   event.preventDefault()
   // get the form from event
   const form = event.target
@@ -12,13 +12,13 @@ const onCreate = function (event) {
   // get data from form
   const data = getFormFields(form)
   // send data in AJAX request to the api
-  api.create(data)
+  api.createGemstone(data)
   // handle successful response
     .then(ui.onCreateSuccess)
     // handle failed response
     .catch(ui.onCreateFailure)
 }
-const onIndex = function (event) {
+const onIndexGemstone = function (event) {
   event.preventDefault()
   // get the form from event
   const form = event.target
@@ -26,13 +26,13 @@ const onIndex = function (event) {
   // get data from form
   const data = getFormFields(form)
   // send data in AJAX request to the api
-  api.index(data)
+  api.indexGemstone(data)
   // handle successful response
     .then(ui.onIndexSuccess)
     // handle failed response
     .catch(ui.onIndexFailure)
 }
-const onShow = function (event) {
+const onShowGemstone = function (event) {
   event.preventDefault()
   // get the form from event
   const form = event.target
@@ -40,13 +40,13 @@ const onShow = function (event) {
   // get data from form
   const data = getFormFields(form)
   // send data in AJAX request to the api
-  api.show(data)
+  api.showGemstone(data)
   // handle successful response
     .then(ui.onShowSuccess)
     // handle failed response
     .catch(ui.onShowFailure)
 }
-const onUpgrade = function (event) {
+const onUpdateGemstone = function (event) {
   event.preventDefault()
   // get the form from event
   const form = event.target
@@ -54,26 +54,26 @@ const onUpgrade = function (event) {
   // get data from form
   const data = getFormFields(form)
   // send data in AJAX request to the api
-  api.upgrade(data)
+  api.updateGemstone(data)
   // handle successful response
     .then(ui.onUpgradeSuccess)
     // handle failed response
     .catch(ui.onUpgradeFailure)
 }
-const onDestroy = function (event) {
+const onDestroyGemstone = function (event) {
   event.preventDefault()
   // send data in AJAX request to the api
-  api.destroy()
+  api.destroyGemstone()
   // handle successful response
-    .then(ui.destroySuccess)
+    .then(ui.onDestroySuccess)
     // handle failed response
-    .catch(ui.destroyFailure)
+    .catch(ui.onDestroyFailure)
 }
 
 module.exports = {
-  onCreate,
-  onIndex,
-  onShow,
-  onUpgrade,
-  onDestroy
+  onCreateGemstone,
+  onIndexGemstone,
+  onShowGemstone,
+  onUpdateGemstone,
+  onDestroyGemstone
 }

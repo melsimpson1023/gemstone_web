@@ -57,16 +57,15 @@
           </fieldset>
         </form>
       </section>
+      <div id="gemstome-forms">
       <section>
       <form id="add-gemstone-form">
         <fieldset>
           <legend>Sell Gemstone</legend>
           <label for="add-gemstone">Gemstone</label>
-          <input id="add-gemstone" type="text" name="gemstone" placeholder="add gemstone">
+          <input id="add-gemstone" type="text" name="gemstone[name]" placeholder="add gemstone">
           <label for="price-of-gemstone">Price</label>
-          <input id="price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
-          <label for="owner-of-gemstone">Owner</label>
-          <input id="owner-of-gemstone" type="text" name="owner[gemstone]" placeholder="Owner">
+          <input id="price-of-gemstone" type="text" name="gemstone[price]" placeholder="Price">
           <input type="submit" value="Add Gemstone">
         </fieldset>
       </form>
@@ -76,11 +75,11 @@
       <fieldset>
         <legend>Update Gemstones</legend>
         <label for="update-gemstone">Gemstone</label>
-        <input id="update-gemstone" type="text" name="gemstone" placeholder="Gemstone">
+        <input id="update-gemstone" type="text" name="gemstone[name]" placeholder="Gemstone">
         <label for="update-price-of-gemstone">Price</label>
-        <input id="update-price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
-        <label for="update-owner-of-gemstone">Owner</label>
-        <input id="update-owner-of-gemstone" type="text" name="owner[gemstone]" placeholder="Owner">
+        <input id="update-price-of-gemstone" type="text" name="gemstone[price]" placeholder="Price">
+        <label for="update-id-of-gemstone">Id</label>
+        <input id="update-id-of-gemstone" type="text" name="gemstone[id]" placeholder="Id">
         <input type="submit" value="Update Gemstone">
     </fieldset>
     </form>
@@ -93,8 +92,6 @@
         <input id="destroy-gemstone" type="text" name="gemstone" placeholder="Gemstone">
         <label for="destroy-price-of-gemstone">Price</label>
         <input id="destroy-price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
-        <label for="destroy-owner-of-gemstone">Owner</label>
-        <input id="destroy-owner-of-gemstone" type="text" name="owner[gemstone]" placeholder="Owner">
         <input type="submit" value="Delete Gemstone">
     </fieldset>
     </form>
@@ -111,6 +108,7 @@
         <input type="submit" value="Show Your Gemstones">
       </form>
     </section>
+  </div>
     <br></br>
     </body>
 </html>

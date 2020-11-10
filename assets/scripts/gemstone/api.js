@@ -6,7 +6,7 @@ const store = require('../store')
 // create a new gemstone
 const createGemstone = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/create',
+    url: config.apiUrl + '/gemstones',
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -16,8 +16,9 @@ const createGemstone = function (data) {
 }
 // update the gemstone
 const updateGemstone = function (data) {
+  console.log('data is ', data)
   return $.ajax({
-    url: config.apiUrl + '/update',
+    url: config.apiUrl + '/gemstones/' + data.gemstone.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -27,7 +28,10 @@ const updateGemstone = function (data) {
 }
 const indexGemstone = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/index',
+    url: config.apiUrl + '/gemstones',
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
     method: 'GET',
     data: data
   })
@@ -35,7 +39,7 @@ const indexGemstone = function (data) {
 // show the user only their gemstones
 const showGemstone = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/show',
+    url: config.apiUrl + '/gemstones/' + store.gemstone._id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -46,7 +50,7 @@ const showGemstone = function (data) {
 // delete the gemstone
 const destroyGemstone = function () {
   return $.ajax({
-    url: config.apiUrl + '/destroy',
+    url: config.apiUrl + '/gemstones/' + store.gemstone._id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },

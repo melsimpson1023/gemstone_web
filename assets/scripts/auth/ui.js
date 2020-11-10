@@ -18,6 +18,7 @@ const onSignInSuccess = function (response) {
   store.user = response.user
   $('#sign-up-form').hide()
   $('#sign-in-form').hide()
+  // $('#gemstone-forms').show()
   $('#change-password-form').show()
   $('#add-gemstone-form').show()
   $('#sign-out-form').show()
@@ -25,7 +26,6 @@ const onSignInSuccess = function (response) {
   $('#index-gemstone-form').show()
   $('#destroy-gemstone-form').show()
   $('#update-gemstone-form').show()
-  $('#add-gemstone-form').show()
 }
 const onSignInFailure = function () {
   $('#message').text('Sign in failed, try again')
@@ -51,6 +51,10 @@ const onSignOutSuccess = function () {
   $('#change-password-form').hide()
   $('#sign-out-form').hide()
   $('#add-gemstone-form').hide()
+  $('#show-gemstone-form').hide()
+  $('#index-gemstone-form').hide()
+  $('#destroy-gemstone-form').hide()
+  $('#update-gemstone-form').hide()
 }
 
 module.exports = {
