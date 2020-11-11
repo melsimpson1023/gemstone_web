@@ -10,3 +10,7 @@
 10. created my api.js for gemstones to create, show, index, update, and destroy
 11. populated the events.js with AJAX request for each type of user task.
 12. updated events.js in gemstones
+13. created the ui.js file in gemstones and populated it
+14. added forms to the HTML for create, index, show, update, and destroy.
+15. did some styling in my index.scss file
+16. worked on showing gemstone in the html when clicked

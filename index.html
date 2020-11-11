@@ -13,6 +13,7 @@
     </head>
     <body>
       <h1>Gemstone Palace</h1>
+      <p id="message"></p>
       <section>
         <form id="sign-up-form">
           <fieldset>
@@ -89,9 +90,7 @@
       <fieldset>
         <legend>Delete Gemstones</legend>
         <label for="destroy-gemstone">Gemstone</label>
-        <input id="destroy-gemstone" type="text" name="gemstone" placeholder="Gemstone">
-        <label for="destroy-price-of-gemstone">Price</label>
-        <input id="destroy-price-of-gemstone" type="text" name="price[gemstone]" placeholder="Price">
+        <input id="destroy-gemstone" type="text" name="gemstone[id]" placeholder="Gemstone">
         <input type="submit" value="Delete Gemstone">
     </fieldset>
     </form>
@@ -104,7 +103,11 @@
     </section>
     <br></br>
     <section>
+      <div id="response"></div>
       <form id="show-gemstone-form">
+        <legend>Show Gemstones</legend>
+        <label for="show-gemstone">Gemstone</label>
+        <input id="show-gemstone" type="text" name="gemstone[id]" placeholder="Gemstone">
         <input type="submit" value="Show Your Gemstones">
       </form>
     </section>

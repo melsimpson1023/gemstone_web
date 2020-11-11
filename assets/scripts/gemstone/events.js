@@ -61,9 +61,13 @@ const onUpdateGemstone = function (event) {
     .catch(ui.onUpgradeFailure)
 }
 const onDestroyGemstone = function (event) {
+  console.log('event is ', event)
   event.preventDefault()
+  const form = event.target
+  // get data from form
+  const data = getFormFields(form)
   // send data in AJAX request to the api
-  api.destroyGemstone()
+  api.destroyGemstone(data)
   // handle successful response
     .then(ui.onDestroySuccess)
     // handle failed response

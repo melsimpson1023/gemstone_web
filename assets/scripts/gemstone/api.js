@@ -5,6 +5,7 @@ const store = require('../store')
 
 // create a new gemstone
 const createGemstone = function (data) {
+  console.log('This is data ', data)
   return $.ajax({
     url: config.apiUrl + '/gemstones',
     headers: {
@@ -39,7 +40,7 @@ const indexGemstone = function (data) {
 // show the user only their gemstones
 const showGemstone = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/gemstones/' + store.gemstone._id,
+    url: config.apiUrl + '/gemstones/' + data.gemstone.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -48,9 +49,9 @@ const showGemstone = function (data) {
   })
 }
 // delete the gemstone
-const destroyGemstone = function () {
+const destroyGemstone = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/gemstones/' + store.gemstone._id,
+    url: config.apiUrl + '/gemstones/' + data.gemstone.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
