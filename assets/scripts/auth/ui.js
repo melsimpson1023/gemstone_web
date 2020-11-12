@@ -56,6 +56,7 @@ const onSignOutSuccess = function () {
   $('#index-gemstone-form').hide()
   $('#destroy-gemstone-form').hide()
   $('#update-gemstone-form').hide()
+  $('#filter-index').hide()
 }
 
 module.exports = {
