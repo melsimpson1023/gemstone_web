@@ -1,1 +1,22 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  background: url('public/1121038052-huge.jpg') no-repeat center center;
+  background-size: cover;
+  background-color: rgb(249,249,249);
+  text-align: center;
+  font-family: Perpetua;
+}
+input[type="email"], input[type="password"], input[type="submit"] {
+  letter-spacing: .15em;
+  box-shadow: 2px 2px 1px grey;
+}
+input[type="text"] {
+  letter-spacing: .15em;
+  box-shadow: 2px 2px 1px grey;
+}
+button[id="filter-index"] {
+  letter-spacing: .15em;
+  box-shadow: 2px 2px 1px grey;
+}
+// input[type=submit]
