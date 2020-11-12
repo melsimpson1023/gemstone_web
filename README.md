@@ -15,3 +15,5 @@
 15. did some styling in my index.scss file
 16. worked on showing gemstone in the html when clicked
 17. worked on showing the gemstones that I own.
+18. wireframe here plus user stories
+https://miro.com/welcomeonboard/deoe66byXtWU7bUY1vhtX8YaROd8YbFqwx0e9Llgs6YmHYngXWNsRBQOV87IJTBh
