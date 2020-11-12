@@ -33,17 +33,10 @@ const onIndexGemstone = function (event) {
     .catch(ui.onIndexFailure)
 }
 const onShowGemstone = function (event) {
+  console.log('This is event ', event)
   event.preventDefault()
-  // get the form from event
-  const form = event.target
-  console.log(event)
-  // get data from form
-  const data = getFormFields(form)
-  // send data in AJAX request to the api
-  api.showGemstone(data)
-  // handle successful response
+  api.indexGemstone()
     .then(ui.onShowSuccess)
-    // handle failed response
     .catch(ui.onShowFailure)
 }
 const onUpdateGemstone = function (event) {

@@ -3,7 +3,9 @@
 const store = require('./../store')
 
 const onCreateSuccess = function (response) {
-  $('#message').text('Thanks for adding a gemstone' + response.user)
+  $('#message').text('Thanks for adding a gemstone ' + response.gemstone.name + ' ' + response.gemstone.price + ' ' + response.gemstone._id)
+  // $('#message').text('This is the price ' + response.gemstone.price)
+  // $('#message').text('This is the id of the gemstone ' + response.gemstone._id)
   // create a trigger to reset the form
   $('#add-gemstone-form').trigger('reset')
   store.gemstone = response.gemstone
@@ -13,7 +15,11 @@ const onCreateFailure = function (store) {
   // $('#add-gemstone-form').trigger('reset')
 }
 const onIndexSuccess = function (response) {
-  $('#message').text('These are all of our gemstones for sell.' + response.user)
+  $('#message').text('These are all of our gemstones for sell ' + response.gemstones.map(gemstone => {
+    return gemstone.name + ' ' + gemstone.price + ' ' + gemstone._id
+  }).join(', ')
+  )
+  store.gemstone = response.gemstones
   // $('#index-gemstone-form').trigger('reset')
   //  $('#sign-up-form').hide()
   //  $('#sign-in-form').hide()
@@ -34,7 +40,7 @@ const onIndexFailure = function () {
 const onUpgradeSuccess = function () {
   console.log('Upgrade Successful')
   $('#message').text('Gemstones Upgraded Successfully')
-  $('#index-gemstone-form').trigger('reset')
+  $('#update-gemstone-form').trigger('reset')
 }
 const onUpgradeFailure = function (store) {
   $('#message').text('Try again')
@@ -42,12 +48,16 @@ const onUpgradeFailure = function (store) {
 const onShowSuccess = function (response) {
   console.log('Show Successful')
   console.log(response)
-  store.gemstone = response.gemstone
+  // store.gemstone = response.gemstone
+  $('#message').text('These are all of our gemstones for sell ' + response.gemstones.filter(gemstone => gemstone.owner === store.user._id).map(gemstone => {
+    return gemstone.name + ' ' + gemstone.price + ' ' + gemstone._id
+  }).join(', ')
+  )
   // $('#response').text(`${response.gemstone.name}`)
-  $('#response').text(`${response.gemstone.name}`)
+  // $('#response').text(`${response.gemstone.name}`)
   // $('#response').text(`$
-  $('#response').text(`${response.gemstone}`)
-  $('#message').text('Here is your gemstone' + (`${response.gemstone.name}`))
+  //  $('#response').text(`${response.gemstone.name + ' ' + response.gemstone.price + ' ' + response.gemstone._id}`)
+  // $('#message').text('Here is your gemstone ' + response.gemstone.name + ' ' + response.gemstone.price + ' ' + response.gemstone._id)
   $('#show-gemstone-form').trigger('reset')
 }
 const onShowFailure = function () {

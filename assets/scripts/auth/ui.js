@@ -26,6 +26,7 @@ const onSignInSuccess = function (response) {
   $('#index-gemstone-form').show()
   $('#destroy-gemstone-form').show()
   $('#update-gemstone-form').show()
+  $('#filter-index').show()
 }
 const onSignInFailure = function () {
   $('#message').text('Sign in failed, try again')

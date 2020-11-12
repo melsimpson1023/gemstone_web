@@ -14,3 +14,4 @@
 14. added forms to the HTML for create, index, show, update, and destroy.
 15. did some styling in my index.scss file
 16. worked on showing gemstone in the html when clicked
+17. worked on showing the gemstones that I own.

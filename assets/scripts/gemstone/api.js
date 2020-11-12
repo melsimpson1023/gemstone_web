@@ -27,18 +27,20 @@ const updateGemstone = function (data) {
     data: data
   })
 }
-const indexGemstone = function (data) {
+const indexGemstone = function () {
+  // console.log('This is data ', data)
   return $.ajax({
     url: config.apiUrl + '/gemstones',
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    method: 'GET',
-    data: data
+    method: 'GET'
+    // data: data
   })
 }
 // show the user only their gemstones
 const showGemstone = function (data) {
+  console.log('This is data ', data)
   return $.ajax({
     url: config.apiUrl + '/gemstones/' + data.gemstone.id,
     headers: {
@@ -50,6 +52,7 @@ const showGemstone = function (data) {
 }
 // delete the gemstone
 const destroyGemstone = function (data) {
+  console.log('This is data ', data)
   return $.ajax({
     url: config.apiUrl + '/gemstones/' + data.gemstone.id,
     headers: {
