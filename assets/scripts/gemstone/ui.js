@@ -38,7 +38,7 @@ const onIndexFailure = function () {
   // $('#index-gemstone-form').trigger('reset')
 }
 const onUpgradeSuccess = function () {
-  console.log('Upgrade Successful')
+  // console.log('Upgrade Successful')
   $('#message').text('Gemstones Upgraded Successfully')
   $('#update-gemstone-form').trigger('reset')
 }
@@ -46,8 +46,8 @@ const onUpgradeFailure = function (store) {
   $('#message').text('Try again')
 }
 const onShowSuccess = function (response) {
-  console.log('Show Successful')
-  console.log(response)
+  // console.log('Show Successful')
+  // console.log(response)
   // store.gemstone = response.gemstone
   $('#message').text('These are all of our gemstones for sell ' + response.gemstones.filter(gemstone => gemstone.owner === store.user._id).map(gemstone => {
     return gemstone.name + ' ' + gemstone.price + ' ' + gemstone._id
@@ -64,7 +64,7 @@ const onShowFailure = function () {
   $('#message').text('Try again')
 }
 const onDestroySuccess = function () {
-  console.log('Deleted Successfully')
+  // console.log('Deleted Successfully')
   $('#message').text('You have successfully deleted your gemstone.')
   $('#destroy-gemstone-form').trigger('reset')
 }
