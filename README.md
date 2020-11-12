@@ -1,3 +1,5 @@
+Technologies used: HTML, JavaScript, css, AJAX, and jquery
+
 1. initialized git repository
 2. created auth folder and gemstone folder
 3. created and api.js, events.js, and ui.js in both directories
