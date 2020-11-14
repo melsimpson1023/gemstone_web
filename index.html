@@ -101,18 +101,56 @@
       </form>
     </section>
     <br></br>
-    <!-- <section>
-    <p id="response"></p>
-      <form id="show-gemstone-form">
-        <legend>Show Gemstones</legend>
-        <label for="show-gemstone">Gemstone</label>
-        <input id="show-gemstone" type="text" name="gemstone[id]" placeholder="Gemstone">
-        <input type="submit" value="Show Your Gemstones">
-      </form>
-    </section> -->
     <section>
       <button id='filter-index'>Your Gemstones</button>
     </section>
     <br></br>
+    <section>
+    <form id="add-jewelry-form">
+      <fieldset>
+        <legend>Sell Jewelry</legend>
+        <label for="add-jewelry">Jewelry</label>
+        <input id="add-jewelry" type="text" name="jewelry[name]" placeholder="add jewelry">
+        <label for="price-of-jewelry">Price</label>
+        <input id="price-of-jewelry" type="text" name="jewelry[price]" placeholder="Price">
+        <input type="submit" value="Add Jewelry">
+      </fieldset>
+    </form>
+  </section>
+  <section>
+    <form id="update-jewelry-form">
+    <fieldset>
+      <legend>Update Jewelry</legend>
+      <label for="update-jewelry">Jewelry</label>
+      <input id="update-jewelry" type="text" name="jewelry[name]" placeholder="Jewelry">
+      <label for="update-price-of-jewelry">Price</label>
+      <input id="update-price-of-jewelry" type="text" name="jewelry[price]" placeholder="Price">
+      <label for="update-id-of-jewelry">Id</label>
+      <input id="update-id-of-jewelry" type="text" name="jewelry[id]" placeholder="Id">
+      <input type="submit" value="Update Jewelry">
+  </fieldset>
+  </form>
+  </section>
+  <section>
+    <form id="destroy-jewelry-form">
+    <fieldset>
+      <legend>Delete Gemstones</legend>
+      <label for="destroy-jewelry">Jewelry</label>
+      <input id="destroy-jewelry" type="text" name="jewelry[id]" placeholder="Jewelry">
+      <input type="submit" value="Delete Jewelry">
+  </fieldset>
+  </form>
+  </section>
+  <br></br>
+  <section>
+    <form id="index-jewelry-form">
+      <input type="submit" value="Show All Jewelry">
+    </form>
+  </section>
+  <br></br>
+  <section>
+    <button id='jewelry-filter-index'>Your Jewelry</button>
+  </section>
+  <br></br>
     </body>
 </html>

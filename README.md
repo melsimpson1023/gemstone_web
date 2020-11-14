@@ -15,3 +15,9 @@
 15. did some styling in my index.scss file
 16. worked on showing gemstone in the html when clicked
 17. worked on showing the gemstones that I own.
+18. created jewelry folder for my api.js, events.js and my ui.js
+19. made changes to the HTML to show forms and buttons for jewelry.
+20. added the jquery to the app.js for the on forms and to hide the jewelry
+forms on login.
+21. In the jewelry/api.js file, I added AJAX request functions for index, update, show,
+create and destroy.
