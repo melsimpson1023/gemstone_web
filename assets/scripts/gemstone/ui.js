@@ -64,7 +64,8 @@ const onShowFailure = function () {
   $('#message').text('Try again')
 }
 const onDestroySuccess = function () {
-  // console.log('Deleted Successfully')
+  // 0-\[]PP
+  console.log('Deleted Successfully')
   $('#message').text('You have successfully deleted your gemstone.')
   $('#destroy-gemstone-form').trigger('reset')
 }
