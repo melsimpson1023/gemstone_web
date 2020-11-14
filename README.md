@@ -21,3 +21,4 @@
 forms on login.
 21. In the jewelry/api.js file, I added AJAX request functions for index, update, show,
 create and destroy.
+22. added functions and jquery to the ui.js for jewelry

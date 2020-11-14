@@ -56,6 +56,11 @@ const onSignOutSuccess = function () {
   $('#index-gemstone-form').hide()
   $('#destroy-gemstone-form').hide()
   $('#update-gemstone-form').hide()
+  $('#add-jewelry-form').hide()
+  $('#show-jewelry-form').hide()
+  $('#index-jewelry-form').hide()
+  $('#destroy-jewelry-form').hide()
+  $('#update-jewelry-form').hide()
 }
 
 module.exports = {

@@ -4,8 +4,6 @@ const store = require('./../store')
 
 const onCreateSuccess = function (response) {
   $('#message').text('Thanks for adding a gemstone ' + response.gemstone.name + ' ' + response.gemstone.price + ' ' + response.gemstone._id)
-  // $('#message').text('This is the price ' + response.gemstone.price)
-  // $('#message').text('This is the id of the gemstone ' + response.gemstone._id)
   // create a trigger to reset the form
   $('#add-gemstone-form').trigger('reset')
   store.gemstone = response.gemstone
@@ -20,18 +18,6 @@ const onIndexSuccess = function (response) {
   }).join(', ')
   )
   store.gemstone = response.gemstones
-  // $('#index-gemstone-form').trigger('reset')
-  //  $('#sign-up-form').hide()
-  //  $('#sign-in-form').hide()
-  //  $('#change-password-form').hide()
-  //  $('#add-gemstone-form').show()
-  //  $('#sign-out-form').show()
-  //  $('#show-gemstone-form').show()
-  //  $('#index-gemstone-form').show()
-  //  $('#destroy-gemstone-form').show()
-  //  $('#update-gemstone-form').show()
-  //  $('#add-gemstone-form').show()
-  // clear input areas
 }
 const onIndexFailure = function () {
   $('#message').text('Try again')
@@ -53,11 +39,6 @@ const onShowSuccess = function (response) {
     return gemstone.name + ' ' + gemstone.price + ' ' + gemstone._id
   }).join(', ')
   )
-  // $('#response').text(`${response.gemstone.name}`)
-  // $('#response').text(`${response.gemstone.name}`)
-  // $('#response').text(`$
-  //  $('#response').text(`${response.gemstone.name + ' ' + response.gemstone.price + ' ' + response.gemstone._id}`)
-  // $('#message').text('Here is your gemstone ' + response.gemstone.name + ' ' + response.gemstone.price + ' ' + response.gemstone._id)
   $('#show-gemstone-form').trigger('reset')
 }
 const onShowFailure = function () {

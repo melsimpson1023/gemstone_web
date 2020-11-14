@@ -3,10 +3,10 @@
 const store = require('./../store')
 
 const onCreateSuccess = function (response) {
-  $('#message').text('Thanks for adding a jewelry ' + response.jewelry.name + ' ' + response.gjewelry.price + ' ' + response.jewelry._id)
+  $('#message').text('Thanks for adding a jewelry ' + response.jewelry.name + ' ' + response.jewelry.price + ' ' + response.jewelry._id)
   // create a trigger to reset the form
-  $('#add-gemstone-form').trigger('reset')
-  store.gemstone = response.gemstone
+  $('#add-jewelry-form').trigger('reset')
+  store.jewelry = response.jewelry
 }
 const onCreateFailure = function (store) {
   $('#message').text('Create jewelry failed, please try again')
@@ -22,7 +22,7 @@ const onIndexFailure = function () {
   $('#message').text('Try again')
 }
 const onUpgradeSuccess = function () {
-  // console.log('Upgrade Successful')
+  console.log('Upgrade Successful')
   $('#message').text('Jewelry Upgraded Successfully')
   $('#update-jewelry-form').trigger('reset')
 }
@@ -32,7 +32,7 @@ const onUpgradeFailure = function (store) {
 const onShowSuccess = function (response) {
   // console.log('Show Successful')
   // console.log(response)
-  $('#message').text('These are all of our jewelry for sell ' + response.jewelry.filter(jewelry => jewelry.owner === store.user._id).map(jewelry => {
+  $('#message').text('These are all of our jewelry for sell ' + response.jewelrys.filter(jewelry => jewelry.owner === store.user._id).map(jewelry => {
     return jewelry.name + ' ' + jewelry.price + ' ' + jewelry._id
   }).join(', ')
   )
