@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Gemstone Palace</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>Gemstone Palace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <h1>Gemstone Palace</h1>
-      <p id="message"></p>
-      <section>
-        <form id="sign-up-form">
-          <fieldset>
-          <legend>Sign up</legend>
-          <label for="sign-up-email">Email</label>
-          <input id="sign-up-email" type="email" name="credentials[email]" placeholder="Email">
-          <label for="sign-up-password">Password</label>
-          <input id="sign-up-password" type="password" name="credentials[password]" placeholder="Password">
-          <label for="sign-up-password_confirmation">Password Confirmation</label>
-          <input id="sign-up-password_confirmation" type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-          <input type="submit" value="Sign up">
-        </fieldset>
-        </form>
-      </section>
-      <section>
-        <form id="sign-in-form">
-          <fieldset>
-            <legend>Sign in</legend>
-            <label for="sign-in-email">Email</label>
-            <input id="sign-in-email" type="email" name="credentials[email]" placeholder="Email">
-            <label for="sign-in-password">Password</label>
-            <input id="sign-in-password" type="password" name="credentials[password]" placeholder="Password">
-            <input type="submit" value="Sign in">
-          </fieldset>
-        </form>
-      </section>
-      <section>
-        <form id="change-password-form">
-          <fieldset>
-            <legend>Change Password</legend>
-            <input type="password" name="passwords[old]" placeholder="Old Password">
-            <input type="password" name="passwords[new]" placeholder="New Password">
-            <input type="submit" value="Change Password">
-          </fieldset>
-        </form>
-      </section>
-      <section>
-        <form id="sign-out-form">
-          <fieldset>
-            <legend>Sign Out</legend>
-            <input type="submit" value="Sign Out">
-          </fieldset>
-        </form>
-      </section>
-      <section>
-      <form id="add-gemstone-form">
-        <fieldset>
-          <legend>Sell Gemstone</legend>
-          <label for="add-gemstone">Gemstone</label>
-          <input id="add-gemstone" type="text" name="gemstone[name]" placeholder="add gemstone">
-          <label for="price-of-gemstone">Price</label>
-          <input id="price-of-gemstone" type="text" name="gemstone[price]" placeholder="Price">
-          <input type="submit" value="Add Gemstone">
-        </fieldset>
-      </form>
-    </section>
-    <section>
-      <form id="update-gemstone-form">
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <h1>Gemstone Palace</h1>
+  <p id="message"></p>
+  <section>
+    <form id="sign-up-form">
+      <fieldset>
+        <legend>Sign up</legend>
+        <label for="sign-up-email">Email</label>
+        <input id="sign-up-email" type="email" name="credentials[email]" placeholder="Email">
+        <label for="sign-up-password">Password</label>
+        <input id="sign-up-password" type="password" name="credentials[password]" placeholder="Password">
+        <label for="sign-up-password_confirmation">Password Confirmation</label>
+        <input id="sign-up-password_confirmation" type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+        <input type="submit" value="Sign up">
+      </fieldset>
+    </form>
+  </section>
+  <section>
+    <form id="sign-in-form">
+      <fieldset>
+        <legend>Sign in</legend>
+        <label for="sign-in-email">Email</label>
+        <input id="sign-in-email" type="email" name="credentials[email]" placeholder="Email">
+        <label for="sign-in-password">Password</label>
+        <input id="sign-in-password" type="password" name="credentials[password]" placeholder="Password">
+        <input type="submit" value="Sign in">
+      </fieldset>
+    </form>
+  </section>
+  <section>
+    <form id="change-password-form">
+      <fieldset>
+        <legend>Change Password</legend>
+        <input type="password" name="passwords[old]" placeholder="Old Password">
+        <input type="password" name="passwords[new]" placeholder="New Password">
+        <input type="submit" value="Change Password">
+      </fieldset>
+    </form>
+  </section>
+  <section>
+    <form id="sign-out-form">
+      <fieldset>
+        <legend>Sign Out</legend>
+        <input type="submit" value="Sign Out">
+      </fieldset>
+    </form>
+  </section>
+  <br></br>
+  <section>
+    <button id='jewelry-filter'>Jewelry</button>
+  </section>
+  <br></br>
+  <section>
+    <button id='gemstone-filter'>Gemstones</button>
+  </section>
+  <section>
+    <form id="add-gemstone-form">
+      <fieldset>
+        <legend>Sell Gemstone</legend>
+        <label for="add-gemstone">Gemstone</label>
+        <input id="add-gemstone" type="text" name="gemstone[name]" placeholder="add gemstone">
+        <label for="price-of-gemstone">Price</label>
+        <input id="price-of-gemstone" type="text" name="gemstone[price]" placeholder="Price">
+        <input type="submit" value="Add Gemstone">
+      </fieldset>
+    </form>
+  </section>
+  <section>
+    <form id="update-gemstone-form">
       <fieldset>
         <legend>Update Gemstones</legend>
         <label for="update-gemstone">Gemstone</label>
@@ -81,31 +91,31 @@
         <label for="update-id-of-gemstone">Id</label>
         <input id="update-id-of-gemstone" type="text" name="gemstone[id]" placeholder="Id">
         <input type="submit" value="Update Gemstone">
-    </fieldset>
+      </fieldset>
     </form>
-    </section>
-    <section>
-      <form id="destroy-gemstone-form">
+  </section>
+  <section>
+    <form id="destroy-gemstone-form">
       <fieldset>
         <legend>Delete Gemstones</legend>
         <label for="destroy-gemstone">Gemstone</label>
         <input id="destroy-gemstone" type="text" name="gemstone[id]" placeholder="Gemstone">
         <input type="submit" value="Delete Gemstone">
-    </fieldset>
+      </fieldset>
     </form>
-    </section>
-    <br></br>
-    <section>
-      <form id="index-gemstone-form">
-        <input type="submit" value="Show All Gemstones">
-      </form>
-    </section>
-    <br></br>
-    <section>
-      <button id='filter-index'>Your Gemstones</button>
-    </section>
-    <br></br>
-    <section>
+  </section>
+  <br></br>
+  <section>
+    <form id="index-gemstone-form">
+      <input type="submit" value="Show All Gemstones">
+    </form>
+  </section>
+  <br></br>
+  <section>
+    <button id='filter-index'>Your Gemstones</button>
+  </section>
+  <br></br>
+  <section>
     <form id="add-jewelry-form">
       <fieldset>
         <legend>Sell Jewelry</legend>
@@ -119,27 +129,27 @@
   </section>
   <section>
     <form id="update-jewelry-form">
-    <fieldset>
-      <legend>Update Jewelry</legend>
-      <label for="update-jewelry">Jewelry</label>
-      <input id="update-jewelry" type="text" name="jewelry[name]" placeholder="Jewelry">
-      <label for="update-price-of-jewelry">Price</label>
-      <input id="update-price-of-jewelry" type="text" name="jewelry[price]" placeholder="Price">
-      <label for="update-id-of-jewelry">Id</label>
-      <input id="update-id-of-jewelry" type="text" name="jewelry[id]" placeholder="Id">
-      <input type="submit" value="Update Jewelry">
-  </fieldset>
-  </form>
+      <fieldset>
+        <legend>Update Jewelry</legend>
+        <label for="update-jewelry">Jewelry</label>
+        <input id="update-jewelry" type="text" name="jewelry[name]" placeholder="Jewelry">
+        <label for="update-price-of-jewelry">Price</label>
+        <input id="update-price-of-jewelry" type="text" name="jewelry[price]" placeholder="Price">
+        <label for="update-id-of-jewelry">Id</label>
+        <input id="update-id-of-jewelry" type="text" name="jewelry[id]" placeholder="Id">
+        <input type="submit" value="Update Jewelry">
+      </fieldset>
+    </form>
   </section>
   <section>
     <form id="destroy-jewelry-form">
-    <fieldset>
-      <legend>Delete Gemstones</legend>
-      <label for="destroy-jewelry">Jewelry</label>
-      <input id="destroy-jewelry" type="text" name="jewelry[id]" placeholder="Jewelry">
-      <input type="submit" value="Delete Jewelry">
-  </fieldset>
-  </form>
+      <fieldset>
+        <legend>Delete Gemstones</legend>
+        <label for="destroy-jewelry">Jewelry</label>
+        <input id="destroy-jewelry" type="text" name="jewelry[id]" placeholder="Jewelry">
+        <input type="submit" value="Delete Jewelry">
+      </fieldset>
+    </form>
   </section>
   <br></br>
   <section>
@@ -148,9 +158,6 @@
     </form>
   </section>
   <br></br>
-  <section>
-    <button id='jewelry-filter-index'>Your Jewelry</button>
-  </section>
-  <br></br>
-    </body>
+</body>
+
 </html>

@@ -20,13 +20,15 @@ const onSignInSuccess = function (response) {
   $('#sign-in-form').hide()
   // $('#gemstone-forms').show()
   $('#change-password-form').show()
-  $('#add-gemstone-form').show()
+  $('#add-gemstone-form').hide()
   $('#sign-out-form').show()
-  $('#show-gemstone-form').show()
-  $('#index-gemstone-form').show()
-  $('#destroy-gemstone-form').show()
-  $('#update-gemstone-form').show()
-  $('#filter-index').show()
+  $('#show-gemstone-form').hide()
+  $('#index-gemstone-form').hide()
+  $('#destroy-gemstone-form').hide()
+  $('#update-gemstone-form').hide()
+  $('#filter-index').hide()
+  $('#gemstone-filter').show()
+  $('#jewelry-filter').show()
 }
 const onSignInFailure = function () {
   $('#message').text('Sign in failed, try again')
@@ -61,6 +63,8 @@ const onSignOutSuccess = function () {
   $('#index-jewelry-form').hide()
   $('#destroy-jewelry-form').hide()
   $('#update-jewelry-form').hide()
+  $('#gemstone-filter').hide()
+  $('#jewelry-filter').hide()
 }
 
 module.exports = {
