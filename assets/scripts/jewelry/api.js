@@ -5,9 +5,9 @@ const store = require('../store')
 
 // create a new jewelry
 const createJewelry = function (data) {
-  // console.log('This is data ', data)
+  console.log('This is data ', data)
   return $.ajax({
-    url: config.apiUrl + '/jewelry',
+    url: config.apiUrl + '/jewelrys',
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -17,9 +17,9 @@ const createJewelry = function (data) {
 }
 // update the jewelry
 const updateJewelry = function (data) {
-  // console.log('data is ', data)
+  console.log('data is ', data)
   return $.ajax({
-    url: config.apiUrl + '/jewelry/' + data.jewelry.id,
+    url: config.apiUrl + '/jewelrys/' + data.jewelry.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -30,18 +30,18 @@ const updateJewelry = function (data) {
 const indexJewelry = function () {
   // console.log('This is data ', data)
   return $.ajax({
-    url: config.apiUrl + '/jewelry',
+    url: config.apiUrl + '/jewelrys',
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
     method: 'GET'
   })
 }
-// show the user only their gemstones
+// show the user only their jewelry
 const showJewelry = function (data) {
-  // console.log('This is data ', data)
+  console.log('This is data ', data)
   return $.ajax({
-    url: config.apiUrl + '/jewelry/' + data.jewelry.id,
+    url: config.apiUrl + '/jewelrys/' + data.jewelry.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
@@ -49,11 +49,11 @@ const showJewelry = function (data) {
     data: data
   })
 }
-// delete the gemstone
+// delete the jewelry
 const destroyJewelry = function (data) {
   // console.log('This is data ', data)
   return $.ajax({
-    url: config.apiUrl + '/jewelry/' + data.jewelry.id,
+    url: config.apiUrl + '/jewelrys/' + data.jewelry.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
