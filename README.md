@@ -24,3 +24,7 @@ create and destroy.
 22. added functions and jquery to the ui.js for jewelry
 23. tested the create, index, show, update and destroy.
 24. show didn't work, yet the rest of CRUD did.
+25. I got show to work. I had to update the naming convention.
+26. After signout, the your gemstones button was still showing.
+27. I had to make sure it was in the auth/ui.js for onSignOutSuccess.
+28. Everything is working with the API and showing properly on the SPA

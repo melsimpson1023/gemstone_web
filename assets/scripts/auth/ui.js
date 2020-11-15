@@ -32,7 +32,7 @@ const onSignInSuccess = function (response) {
   $('#destroy-jewelry-form').show()
   $('#index-jewelry-form').show()
   // below was created for show your jewelry
-  $('#show-jewelry-filter').show()
+  $('#show-jewelry-form').show()
   // $('#gemstone-filter').show()
   // $('#jewelry-filter').show()
 }
@@ -64,8 +64,9 @@ const onSignOutSuccess = function () {
   $('#index-gemstone-form').hide()
   $('#destroy-gemstone-form').hide()
   $('#update-gemstone-form').hide()
+  $('#filter-index').hide()
   $('#add-jewelry-form').hide()
-  $('#show-jewelry-filter').hide()
+  $('#show-jewelry-form').hide()
   $('#index-jewelry-form').hide()
   $('#destroy-jewelry-form').hide()
   $('#update-jewelry-form').hide()
