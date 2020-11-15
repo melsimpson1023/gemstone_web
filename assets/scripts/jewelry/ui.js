@@ -12,11 +12,11 @@ const onCreateFailure = function (store) {
   $('#message').text('Create jewelry failed, please try again')
 }
 const onIndexSuccess = function (response) {
-  $('#message').text('These are all of our jewelry for sell ' + response.jewelry.map(jewelry => {
+  $('#message').text('These are all of our jewelry for sell ' + response.jewelrys.map(jewelry => {
     return jewelry.name + ' ' + jewelry.price + ' ' + jewelry._id
   }).join(', ')
   )
-  store.jewelry = response.jewelry
+  store.jewelry = response.jewelrys
 }
 const onIndexFailure = function () {
   $('#message').text('Try again')
@@ -31,12 +31,12 @@ const onUpgradeFailure = function (store) {
 }
 const onShowSuccess = function (response) {
   // console.log('Show Successful')
-  // console.log(response)
+  console.log(response)
   $('#message').text('These are all of our jewelry for sell ' + response.jewelrys.filter(jewelry => jewelry.owner === store.user._id).map(jewelry => {
     return jewelry.name + ' ' + jewelry.price + ' ' + jewelry._id
   }).join(', ')
   )
-  $('#show-jewelry-form').trigger('reset')
+  // $('#show-jewelry-form').trigger('reset')
 }
 const onShowFailure = function () {
   $('#message').text('Try again')

@@ -22,3 +22,5 @@ forms on login.
 21. In the jewelry/api.js file, I added AJAX request functions for index, update, show,
 create and destroy.
 22. added functions and jquery to the ui.js for jewelry
+23. tested the create, index, show, update and destroy.
+24. show didn't work, yet the rest of CRUD did.
