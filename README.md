@@ -30,3 +30,6 @@ create and destroy.
 28. Everything is working with the API and showing properly on the SPA
 29. I added bootstrap to the container to make the sell gemstones and sell
 jewelry is now side by side.
+30. Created a messages p tag to the html for when working with the gemstones schema
+and the jewelry schema
+31. Added the new messages jquery for auth/ui, the jewelry ui and the gemstone ui

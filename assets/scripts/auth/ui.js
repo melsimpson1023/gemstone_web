@@ -14,6 +14,7 @@ const onSignUpFailure = function () {
 }
 const onSignInSuccess = function (response) {
   $('#message').text('Congradulations')
+  $('#messages').text('')
   // save user in the api resonse to our store object
   store.user = response.user
   $('#sign-up-form').hide()
@@ -53,6 +54,7 @@ const onChangePasswordFailure = function () {
 }
 const onSignOutSuccess = function () {
   $('#message').text('Signed out successfully')
+  $('#messages').text('')
   // this below is to clear the input areas
   $('#sign-in-form').trigger('reset')
   $('#sign-up-form').show()
