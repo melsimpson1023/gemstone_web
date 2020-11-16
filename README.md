@@ -28,3 +28,5 @@ create and destroy.
 26. After signout, the your gemstones button was still showing.
 27. I had to make sure it was in the auth/ui.js for onSignOutSuccess.
 28. Everything is working with the API and showing properly on the SPA
+29. I added bootstrap to the container to make the sell gemstones and sell
+jewelry is now side by side.
