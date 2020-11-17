@@ -7,6 +7,7 @@
 // require('./example')
 const events = require('./auth/events')
 const gemstoneEvents = require('./gemstone/events')
+const jewelryEvents = require('./jewelry/events')
 
 $(() => {
   $('#sign-up-form').on('submit', events.onSignUp)
@@ -18,11 +19,27 @@ $(() => {
   $('#destroy-gemstone-form').on('submit', gemstoneEvents.onDestroyGemstone)
   $('#index-gemstone-form').on('submit', gemstoneEvents.onIndexGemstone)
   $('#filter-index').on('click', gemstoneEvents.onShowGemstone)
+<<<<<<< HEAD
+=======
+  // $('#gemstone-filter').on('click', gemstoneEvents.onShowGemstone)
+>>>>>>> develop
   $('#add-jewelry-form').on('submit', jewelryEvents.onCreateJewelry)
   $('#update-jewelry-form').on('submit', jewelryEvents.onUpdateJewelry)
   $('#destroy-jewelry-form').on('submit', jewelryEvents.onDestroyJewelry)
   $('#index-jewelry-form').on('submit', jewelryEvents.onIndexJewelry)
+<<<<<<< HEAD
   $('#jewelry-filter-index').on('click', jewelryEvents.onShowjewelry)
+=======
+  $('#show-jewelry-form').on('submit', jewelryEvents.onShowJewelry)
+  // $('#jewelry-filter').on('click', jewelryEvents.onShowJewelry)
+  $('#add-jewelry-form').hide()
+  $('#update-jewelry-form').hide()
+  $('#destroy-jewelry-form').hide()
+  $('#index-jewelry-form').hide()
+  $('#show-jewelry-form').hide()
+  // $('#jewelry-filter').hide()
+  // $('#gemstone-filter').hide()
+>>>>>>> develop
   $('#change-password-form').hide()
   $('#add-gemstone-form').hide()
   $('#sign-out-form').hide()
