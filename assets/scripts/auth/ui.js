@@ -13,7 +13,7 @@ const onSignUpFailure = function () {
   $('#sign-up-form').trigger('reset')
 }
 const onSignInSuccess = function (response) {
-  $('#message').text('Congradulations')
+  $('#message').text('Congratulations')
   $('#messages').text('')
   // save user in the api resonse to our store object
   store.user = response.user
