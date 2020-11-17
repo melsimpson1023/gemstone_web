@@ -20,23 +20,10 @@ const onIndexSuccess = function (response) {
 }
 const onIndexFailure = function () {
   $('#messages').text('Try again')
-<<<<<<< HEAD
-  // $('#index-gemstone-form').trigger('reset')
-}
-const onUpgradeSuccess = function () {
-<<<<<<< HEAD
-  // console.log('Upgrade Successful')
-  $('#message').text('Gemstones Upgraded Successfully')
-=======
-  console.log('Upgrade Successful')
-  $('#messages').text('Gemstones Upgraded Successfully')
->>>>>>> develop
-=======
 }
 const onUpgradeSuccess = function () {
   console.log('Upgrade Successful')
   $('#messages').text('Gemstone Upgraded Successfully')
->>>>>>> develop
   $('#update-gemstone-form').trigger('reset')
 }
 const onUpgradeFailure = function (store) {
@@ -44,16 +31,9 @@ const onUpgradeFailure = function (store) {
 }
 const onShowSuccess = function (response) {
   // console.log('Show Successful')
-<<<<<<< HEAD
-  // console.log(response)
-  // store.gemstone = response.gemstone
-  $('#messages').text('These are all of our gemstones for sell ' + response.gemstones.filter(gemstone => gemstone.owner === store.user._id).map(gemstone => {
-    return gemstone.name + ' ' + gemstone.price + ' ' + gemstone._id
-=======
   console.log(response)
   $('#messages').text('These are all of our gemstones for sell ' + response.gemstones.filter(gemstone => gemstone.owner === store.user._id).map(jewelry => {
     return jewelry.name + ' ' + jewelry.price + ' ' + jewelry._id
->>>>>>> develop
   }).join(', ')
   )
 }
@@ -61,7 +41,6 @@ const onShowFailure = function () {
   $('#messages').text('Try again')
 }
 const onDestroySuccess = function () {
-  // 0-\[]PP
   console.log('Deleted Successfully')
   $('#messages').text('You have successfully deleted your gemstone.')
   $('#destroy-gemstone-form').trigger('reset')
