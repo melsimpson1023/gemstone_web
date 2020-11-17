@@ -10,7 +10,6 @@ const onCreateSuccess = function (response) {
 }
 const onCreateFailure = function (store) {
   $('#messages').text('Create gemstone failed, please try again')
-  // $('#add-gemstone-form').trigger('reset')
 }
 const onIndexSuccess = function (response) {
   $('#messages').text('These are all of our gemstones for sell ' + response.gemstones.map(gemstone => {
@@ -21,6 +20,7 @@ const onIndexSuccess = function (response) {
 }
 const onIndexFailure = function () {
   $('#messages').text('Try again')
+<<<<<<< HEAD
   // $('#index-gemstone-form').trigger('reset')
 }
 const onUpgradeSuccess = function () {
@@ -31,6 +31,12 @@ const onUpgradeSuccess = function () {
   console.log('Upgrade Successful')
   $('#messages').text('Gemstones Upgraded Successfully')
 >>>>>>> develop
+=======
+}
+const onUpgradeSuccess = function () {
+  console.log('Upgrade Successful')
+  $('#messages').text('Gemstone Upgraded Successfully')
+>>>>>>> develop
   $('#update-gemstone-form').trigger('reset')
 }
 const onUpgradeFailure = function (store) {
@@ -38,13 +44,18 @@ const onUpgradeFailure = function (store) {
 }
 const onShowSuccess = function (response) {
   // console.log('Show Successful')
+<<<<<<< HEAD
   // console.log(response)
   // store.gemstone = response.gemstone
   $('#messages').text('These are all of our gemstones for sell ' + response.gemstones.filter(gemstone => gemstone.owner === store.user._id).map(gemstone => {
     return gemstone.name + ' ' + gemstone.price + ' ' + gemstone._id
+=======
+  console.log(response)
+  $('#messages').text('These are all of our gemstones for sell ' + response.gemstones.filter(gemstone => gemstone.owner === store.user._id).map(jewelry => {
+    return jewelry.name + ' ' + jewelry.price + ' ' + jewelry._id
+>>>>>>> develop
   }).join(', ')
   )
-  $('#show-gemstone-form').trigger('reset')
 }
 const onShowFailure = function () {
   $('#messages').text('Try again')

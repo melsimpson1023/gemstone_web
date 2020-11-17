@@ -9,7 +9,7 @@ Technologies used: HTML, JavaScript, css, AJAX, and jquery
 4. Jquery
 5. AJAX
 6. Bootstrap
-7. CSS
+7. SCSS
 
 ## Steps I went through
 >>>>>>> develop
