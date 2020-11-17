@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-Technologies used: HTML, JavaScript, css, AJAX, and jquery
-=======
+
 ## Topology Used
 
 1. HTML
@@ -12,7 +10,6 @@ Technologies used: HTML, JavaScript, css, AJAX, and jquery
 7. SCSS
 
 ## Steps I went through
->>>>>>> develop
 
 1. initialized git repository
 2. created auth folder and gemstone folder
@@ -31,10 +28,6 @@ Technologies used: HTML, JavaScript, css, AJAX, and jquery
 15. did some styling in my index.scss file
 16. worked on showing gemstone in the html when clicked
 17. worked on showing the gemstones that I own.
-<<<<<<< HEAD
-18. wireframe link here plus user stories
-https://miro.com/welcomeonboard/deoe66byXtWU7bUY1vhtX8YaROd8YbFqwx0e9Llgs6YmHYngXWNsRBQOV87IJTBh
-=======
 18. created jewelry folder for my api.js, events.js and my ui.js
 19. made changes to the HTML to show forms and buttons for jewelry.
 20. added the jquery to the app.js for the on forms and to hide the jewelry
@@ -55,4 +48,3 @@ and the jewelry schema
 31. Added the new messages jquery for auth/ui, the jewelry ui and the gemstone ui
 
 [Link to User Stories and Wire-frame](https://miro.com/welcomeonboard/deoe66byXtWU7bUY1vhtX8YaROd8YbFqwx0e9Llgs6YmHYngXWNsRBQOV87IJTBh)
->>>>>>> develop

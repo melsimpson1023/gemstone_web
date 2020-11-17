@@ -15,10 +15,7 @@ const onSignUpFailure = function () {
 const onSignInSuccess = function (response) {
   $('#message').text('Congratulations')
   $('#messages').text('')
-<<<<<<< HEAD
-=======
   $('#message').text('Congradulations')
->>>>>>> develop
   // save user in the api resonse to our store object
   store.user = response.user
   $('#sign-up-form').hide()
@@ -71,19 +68,11 @@ const onSignOutSuccess = function () {
   $('#destroy-gemstone-form').hide()
   $('#update-gemstone-form').hide()
   $('#filter-index').hide()
-<<<<<<< HEAD
-=======
   $('#add-jewelry-form').hide()
   $('#show-jewelry-form').hide()
   $('#index-jewelry-form').hide()
   $('#destroy-jewelry-form').hide()
   $('#update-jewelry-form').hide()
-<<<<<<< HEAD
-  // $('#gemstone-filter').hide()
-  // $('#jewelry-filter').hide()
->>>>>>> develop
-=======
->>>>>>> develop
 }
 
 module.exports = {
