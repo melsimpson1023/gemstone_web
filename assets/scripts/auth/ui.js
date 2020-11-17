@@ -13,12 +13,9 @@ const onSignUpFailure = function () {
   $('#sign-up-form').trigger('reset')
 }
 const onSignInSuccess = function (response) {
-<<<<<<< HEAD
   $('#message').text('Congratulations')
   $('#messages').text('')
-=======
   $('#message').text('Congradulations')
->>>>>>> main
   // save user in the api resonse to our store object
   store.user = response.user
   $('#sign-up-form').hide()
@@ -32,7 +29,6 @@ const onSignInSuccess = function (response) {
   $('#destroy-gemstone-form').show()
   $('#update-gemstone-form').show()
   $('#filter-index').show()
-<<<<<<< HEAD
   $('#add-jewelry-form').show()
   $('#update-jewelry-form').show()
   $('#destroy-jewelry-form').show()
@@ -41,8 +37,6 @@ const onSignInSuccess = function (response) {
   $('#show-jewelry-form').show()
   // $('#gemstone-filter').show()
   // $('#jewelry-filter').show()
-=======
->>>>>>> main
 }
 const onSignInFailure = function () {
   $('#message').text('Sign in failed, try again')
@@ -61,10 +55,7 @@ const onChangePasswordFailure = function () {
 }
 const onSignOutSuccess = function () {
   $('#message').text('Signed out successfully')
-<<<<<<< HEAD
   $('#messages').text('')
-=======
->>>>>>> main
   // this below is to clear the input areas
   $('#sign-in-form').trigger('reset')
   $('#sign-up-form').show()
@@ -76,17 +67,12 @@ const onSignOutSuccess = function () {
   $('#index-gemstone-form').hide()
   $('#destroy-gemstone-form').hide()
   $('#update-gemstone-form').hide()
-<<<<<<< HEAD
   $('#filter-index').hide()
   $('#add-jewelry-form').hide()
   $('#show-jewelry-form').hide()
   $('#index-jewelry-form').hide()
   $('#destroy-jewelry-form').hide()
   $('#update-jewelry-form').hide()
-  // $('#gemstone-filter').hide()
-  // $('#jewelry-filter').hide()
-=======
->>>>>>> main
 }
 
 module.exports = {
